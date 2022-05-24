@@ -14,15 +14,12 @@ class Route
          $url[0] = 'home';
       }
 
-
-
       if (file_exists('../app/Controllers/' . $url[0] . '.php')) {
          $this->controller = $url[0];
       }
 
       require_once '../app/controllers/' . $this->controller . '.php';
       $this->controller = new $this->controller;
-
 
       if (isset($url[1])) {
          if (method_exists($this->controller, $url[1])) {
