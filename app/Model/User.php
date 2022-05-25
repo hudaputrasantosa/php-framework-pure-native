@@ -1,5 +1,14 @@
 <?php
 class User
 {
-   public $name = 'php-framework-pure-native';
+   private $_db;
+   public function __construct()
+   {
+      $this->_db = Database::getInstance();
+   }
+
+   public function index()
+   {
+      return $this->_db->index('');
+   }
 }
