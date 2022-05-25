@@ -7,4 +7,8 @@ class HomeController extends Controller
    {
       return $this->view('index');
    }
+   public function getUser()
+   {
+      $this->model('User');
+   }
 }
