@@ -12,6 +12,7 @@
 
 <body>
    <div class="px-4 py-5 my-5 text-center">
+
       <img class="d-block mx-auto mb-4" src="../public/assets/img/framework-native.png" alt="" width="270">
       <h1 class="display-5 fw-bold">Php Framework Pure Native</h1>
       <div class="col-lg-7 mx-auto">
