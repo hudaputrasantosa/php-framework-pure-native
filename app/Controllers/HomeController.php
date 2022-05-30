@@ -9,6 +9,6 @@ class HomeController extends Controller
    }
    public function getUser()
    {
-      $this->model('User');
+      $model = $this->model('User')->index();
    }
 }
